@@ -69,10 +69,5 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         });
 });
 
-function downloadPDF() {
-    const link = document.createElement('a');
-    link.href = '../resume/sijjaResume.pdf'; // Path to your hosted PDF
-    link.download = 'resume(bavindu).pdf';   // Optional: Rename the downloaded file
-    link.click();
-}
+
 
