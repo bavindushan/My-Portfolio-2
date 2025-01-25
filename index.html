@@ -7,7 +7,7 @@
     <title>Bvindu's Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
 </head>
 
 <body>
@@ -49,7 +49,7 @@
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
+                <a href="#" class="btn" onclick="downloadPDF()">Resume</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
@@ -155,13 +155,82 @@
         <h2 class="heading">Projects</h2>
 
         <div class="services-container">
-            
+
             <div class="service-box">
                 <div class="services-info">
-                    <h4>UI/UX Design</h4>
-                    <p></p>
+                    <a href="https://github.com/bavindushan/MOS_Burgers_Project.git">
+                        <h4>MOS Burgers Project</h4>
+                    </a>
+                    <p>
+                        The MOS Burgers Project is a web application developed using HTML5, CSS3, JavaScript, and JSON
+                        to streamline the burger ordering process, providing dynamic product listings, real-time order
+                        management, and PDF generation for orders.</p>
                 </div>
             </div>
+            <div class="service-box">
+                <div class="services-info">
+                    <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git">
+                        <h4>Bus Seat Reservation System</h4>
+                    </a>
+                    <p>This system was developed using Java, with Data Structures and Algorithms for efficient queue
+                        operations, and implemented in Microsoft Visual Studio Code.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-info">
+                    <a href="https://github.com/bavindushan/Sampath_Food_City_System.git">
+                        <h4>Sampath Food City System</h4>
+                    </a>
+                    <p>This project was developed using Python, adhering to SOLID principles and clean coding practices,
+                        with pytest for testing, and implemented in Microsoft Visual Studio Code.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-info">
+                    <a href="https://github.com/bavindushan/malcolm-s_photography_website.git">
+                        <h4>Malcolm's Photography Website</h4>
+                    </a>
+                    <p>This project was developed to showcase Malcolm Lismore's portfolio, utilizing HTML5, CSS3,
+                        JavaScript, PHP, and MySQL for an engaging design and easy navigation.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-info">
+                    <a href="https://github.com/bavindushan/Grifindo-Travels-Vehicle-Rental-Hire-System.git">
+                        <h4>Grifindo Travels System</h4>
+                    </a>
+                    <p>This C# application for Grifindo Travels was developed using C#,MySQL and Visual Studio to
+                        calculate and record rental and hire charges for various vehicles, including cars, SUVs, and
+                        vans, supporting both driver-assisted and self-drive rental options.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-info">
+                    <a href="https://github.com/bavindushan/Quiet-Attic-Films-Database-Design.git">
+                        <h4>Quiet Attic Films Database Design</h4>
+                    </a>
+                    <p>This database for Quiet Attic Films was developed using C# and MySQL to organize key data on
+                        clients, assets, and production workflows, improving operations and collaboration within the
+                        company.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-info">
+                    <a href="https://github.com/bavindushan/LAN-Design-Implementation-for-Alliance-Health.git">
+                        <h4>LAN Design & Implementation for Alliance Health</h4>
+                    </a>
+                    <p>This project involved designing and implementing an efficient network for the Matara branch using
+                        Cisco Packet Tracer, covering LAN/WLAN standards, topology selection, VLAN configuration, and
+                        essential network devices.</p>
+                </div>
+            </div>
+            <!-- <div class="service-box">
+                <div class="services-info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div> -->
+
 
         </div>
     </section>
@@ -223,29 +292,30 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="">
+        <form class="contact-form" id="contact-form">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" id="full-name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" id="phone" placeholder="Phone Number" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
+
     </section>
 
     <footer class="footer">
         <div class="social">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/bavindu-shan"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/bavindushan"><i class='bx bxl-github'></i></a>
             <a href="#"><i class='bx bxl-instagram-alt'></i></a>
             <a href="#"><i class='bx bxl-twitter'></i></a>
         </div>
@@ -255,19 +325,19 @@
             </li>
 
             <li>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
             </li>
 
             <li>
-                <a href="#">About Me</a>
+                <a href="#home">About Me</a>
             </li>
 
             <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
 
             <li>
-                <a href="#">Testimonials</a>
+                <a href="#projects">Projects</a>
             </li>
         </ul>
         <p class="copyright">
@@ -277,8 +347,18 @@
     </footer>
 
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script>
     <script src="script.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>

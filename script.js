@@ -25,3 +25,54 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+// Initialize EmailJS
+emailjs.init("ZZlw1VUIyqwMyEb1R"); // Replace with your EmailJS User ID
+
+// Add event listener to the form
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Collect form data
+    const templateParams = {
+        fullName: document.getElementById("full-name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    };
+
+    // Send email using EmailJS
+    emailjs.send("service_q30nn9r", "template_f7pbrnv", templateParams)
+        .then(function (response) {
+            Swal.fire({
+                title: "Success!",
+                text: "Your message has been sent successfully!",
+                icon: "success"
+            });
+            console.log("Success:", response.status, response.text);
+
+            // Clear form fields
+            document.getElementById("full-name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+        })
+        .catch(function (error) {
+            Swal.fire({
+                icon: "error",
+                title: "Error!",
+                text: "Failed to send the message. Please try again later.",
+            });
+            console.error("Error:", error);
+        });
+});
+
+function downloadPDF() {
+    const link = document.createElement('a');
+    link.href = '/resume/My Resume.pdf'; // Path to your hosted PDF
+    link.download = 'resume(bavindu).pdf';   // Optional: Rename the downloaded file
+    link.click();
+}
+
