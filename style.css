@@ -406,6 +406,7 @@ span {
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 22px;
+    text-align: justify;
 }
 
 ::-webkit-scrollbar {
