@@ -13,7 +13,7 @@
 
 <body>
 
-    <header class="header">
+    <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="header">
         <a href="#home" class="logo">Bavindu
             <span>Shan</span></a>
 
@@ -30,7 +30,7 @@
     </header>
 
     <section class="home" id="home">
-        <div class="home-content">
+        <div data-aos="zoom-out" class="home-content">
             <h1>Hi! It's <span>Bavindu</span></h1>
             <h3 class="text-animation">I'm a&nbsp;<span></span></h3>
             <p>Hi, I’m Bavindu Shan, an enthusiastic and dedicated Software Engineering undergraduate with a passion for
@@ -56,23 +56,26 @@
 
         </div>
 
-        <div class="home-img">
+        <div data-aos="zoom-in" class="home-img">
             <img src="image.jpg" alt="">
         </div>
     </section>
 
     <div>
         <!-- skill carousel -->
-        <div class="skill-carousel-container">
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0"
+            class="skill-carousel-container">
             <div class="skill-carousel">
                 <img src="img/java.png" alt="Image 1">
-                <img src="img/c-sharp.png" alt="Image 2">
-                <img src="img/python.png" alt="Image 6">
-                <img src="img/leaf.png" alt="Image 4">
-                <img src="img/mysql.png" alt="Image 5">
-                <img src="img/html.png" alt="Image 3">
-                <img src="img/text.png" alt="Image 7">
-                <img src="img/xml.png" alt="Image 8">
+                <img src="img/java-script.png" alt="Image 2">
+                <img src="img/c-sharp.png" alt="Image 3">
+                <img src="img/python.png" alt="Image 4">
+                <img src="img/leaf.png" alt="Image 5">
+                <img src="img/mysql.png" alt="Image 6">
+                <img src="img/html.png" alt="Image 7">
+                <img src="img/text.png" alt="Image 8">
+                <img src="img/xml.png" alt="Image 9">
+                <img src="img/cisco.png" alt="Image 10">
             </div>
         </div>
     </div>
@@ -83,7 +86,8 @@
 
         <div class="timeline-items">
 
-            <div class="timeline-item">
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
+                class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Oct 2022 – Sep 2024</div>
                 <div class="timeline-content">
@@ -96,7 +100,8 @@
 
             </div>
 
-            <div class="timeline-item">
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
+                class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Sep 2024 – Present</div>
                 <div class="timeline-content">
@@ -109,7 +114,8 @@
 
             </div>
 
-            <div class="timeline-item">
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
+                class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Jan 2025 – Present</div>
                 <div class="timeline-content">
@@ -124,55 +130,134 @@
         </div>
     </section>
 
+    <!-- -------------------------------------------Services---------------------------------------------------- -->
+
+
     <section class="services" id="services">
         <h2 class="heading">Services</h2>
 
-        <div class="services-container">
-            <div class="service-box">
-                <div class="services-info">
-                    <h4>Web Application Development</h4>
-                    <p>
-                        I specialize in designing and developing dynamic web applications using technologies like HTML5,
-                        CSS3, JavaScript, and JSON. From interactive user interfaces to robust back-end integration, I
-                        deliver responsive and efficient web solutions tailored to your needs.</p>
-                </div>
-            </div>
+        <div  class="wrapper">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
+                <img src="img/srvices/pexels-mizunokozuki-12899157.jpg" alt="">
+                <div class="info">
+                    <h1>Back-End Development</h1>
+                    <p>I specialize in developing scalable and secure back-end systems using Spring Boot and Hibernate.
+                        I design RESTful APIs, manage databases with MySQL, and implement security measures such as
+                        JASYPT encryption to ensure data protection.</p>
 
-            <div class="service-box">
-                <div class="services-info">
-                    <h4>Software Engineering Solutions</h4>
-                    <p>With expertise in Java, Python, and C#, I provide custom software solutions that adhere to
-                        industry best practices such as SOLID principles. Whether it's desktop applications, system
-                        design, or algorithm optimization, I ensure scalable and maintainable results.</p>
                 </div>
             </div>
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
+                <img src="img/srvices/pexels-realtoughcandy-11035543.jpg" alt="">
+                <div class="info">
+                    <h1>Front-End Development</h1>
+                    <p>I build interactive and responsive web applications using Angular, leveraging my expertise in
+                        JavaScript, Bootstrap, and Tailwind CSS to create modern and user-friendly interfaces.</p>
 
-            <div class="service-box">
-                <div class="services-info">
-                    <h4>DB Design and Management</h4>
-                    <p>I offer comprehensive database design and management services using tools like MySQL. From
-                        creating efficient schemas to optimizing queries, I ensure your data systems are robust, secure,
-                        and reliable.</p>
                 </div>
             </div>
-            <div class="service-box">
-                <div class="services-info">
-                    <h4>UI/UX Design</h4>
-                    <p>
-                        With hands-on experience in JavaFX, FXML, and user-centered design principles, I create
-                        intuitive and engaging interfaces that enhance user experiences. My designs focus on aesthetics,
-                        functionality, and accessibility.</p>
-                </div>
-            </div>
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
+                <img src="img/srvices/pexels-fotios-photos-16129728.jpg" alt="">
+                <div class="info">
+                    <h1>Full-Stack Development</h1>
+                    <p>With experience in both front-end and back-end technologies, I develop complete web applications,
+                        ensuring seamless integration between UI/UX and database management.</p>
 
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
+                <img src="img/srvices/pexels-cookiecutter-17489153.jpg" alt="">
+                <div class="info">
+                    <h1>Database & Cloud Services</h1>
+                    <p>I design and optimize databases using MySQL and SQL Server, ensuring efficient data handling.
+                        Additionally, I have foundational knowledge of Microsoft Azure, allowing me to assist with basic
+                        cloud storage and service deployments.</p>
+
+                </div>
+            </div>
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
+                <img src="img/srvices/pexels-pixabay-60504.jpg" alt="">
+                <div class="info">
+                    <h1>Software Architecture & Security</h1>
+                    <p>I build maintainable and scalable software systems following SOLID principles and layered
+                        architecture. My cybersecurity expertise includes data encryption, secure authentication, and
+                        best practices for protecting sensitive information.</p>
+
+                </div>
+            </div>
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
+                <img src="img/srvices/pexels-tara-winstead-8386437.jpg" alt="">
+                <div class="info">
+                    <h1>AI & Automation</h1>
+                    <p>I leverage GitHub Copilot and other AI-powered tools to enhance coding efficiency and automate
+                        development tasks. My knowledge of generative AI enables me to integrate AI-driven features into
+                        applications.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
+                <img src="img/srvices/pexels-karolina-grabowska-7877017.jpg" alt="">
+                <div class="info">
+                    <h1>Training & Consulting</h1>
+                    <p>I provide IT training and consulting services(free), helping individuals and teams improve their
+                        programming skills, software development knowledge.</p>
+
+                </div>
+            </div>
         </div>
 
+        
+
     </section>
+<!-- ------------------------------------------------------------------------------------------------------- -->
 
     <section class="services" id="projects">
         <h2 class="heading">Projects</h2>
-        <!-- -------------------------------------------------------------------------------------------- -->
-        <div data-aos="fade-up-left" class="timeline-item">
+
+        <!-- ------------------------------------------Projects-------------------------------------------------- -->
+
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git">
+                        <img class="projectimg" src="img/project/pexels-rdne-6129119.jpg" alt="">
+                    </a>
+                </div>
+                <h3>Hospital Management System</h3>
+                <p>
+                    Designed a layered architecture system using JavaFX, XML, and MySQL for efficient hospital
+                    management (Standalone). Implemented real-time appointment scheduling, staff workload management,
+                    and secure patient record handling with Jasypt encryption. Integrated JasperReports for automated
+                    billing and dynamic reporting with rollback support.
+                </p>
+                <div class="project_skills">
+                    <img src="img/java.png" alt="Image 1">
+                    <img src="img/mysql.png" alt="Image 6">
+                    <img src="img/text.png" alt="Image 8">
+                    <img src="img/xml.png" alt="Image 9">
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
             <div class="timeline-content">
                 <div>
                     <a href="https://github.com/bavindushan/MOS_Burgers_Project.git">
@@ -184,107 +269,130 @@
                     The MOS Burgers Project is a web application developed using HTML5, CSS3, JavaScript, and JSON
                     to streamline the burger ordering process, providing dynamic product listings, real-time order
                     management, and PDF generation for orders. </p>
+                <div class="project_skills">
+                    <img src="img/java.png" alt="Image 1">
+                    <img src="img/java-script.png" alt="Image 2">
+                    <img src="img/leaf.png" alt="Image 5">
+                    <img src="img/mysql.png" alt="Image 6">
+                    <img src="img/html.png" alt="Image 7">
+                    <img src="img/text.png" alt="Image 8">
+                    <img src="img/xml.png" alt="Image 9">
+                </div>
             </div>
         </div>
 
-        <div data-aos="fade-up-right" class="timeline-item">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
             <div class="timeline-content">
                 <div>
-                    <a href="https://github.com/bavindushan/MOS_Burgers_Project.git">
-                        <img class="projectimg" src="img/project/pexels-nishess-shakya-401526881-15076692.jpg" alt="">
+                    <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git">
+                        <img class="projectimg" src="img/project/pexels-artyom-kulakov-1190754-2266406.jpg" alt="">
                     </a>
                 </div>
-                <h3>BEng (Hons) in Software Engineering</h3>
+                <h3>Bus Seat Reservation System</h3>
                 <p>
-                    Currently pursuing a Bachelor of Engineering (Hons) in Software Engineering (TOP UP) at London
-                    Metropolitan University, UK. This program enhances my expertise in software design, development,
-                    and engineering principles, preparing me for advanced roles in the tech industry. </p>
+                    This system was developed using Java, with Data Structures and Algorithms for efficient queue
+                    operations, and implemented in Microsoft Visual Studio Code.</p>
+                <div class="project_skills">
+                    <img src="img/java.png" alt="Image 1">
+                </div>
             </div>
         </div>
 
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/bavindushan/Sampath_Food_City_System.git">
+                        <img class="projectimg" src="img/project/pexels-fatih-turan-63325184-30996488.jpg" alt="">
+                    </a>
+                </div>
+                <h3>Sampath Food City System</h3>
+                <p>
+                    This project was developed using Python, adhering to SOLID principles and clean coding practices,
+                    with pytest for testing, and implemented in Microsoft Visual Studio Code. </p>
+                <div class="project_skills">
+                    <img src="img/python.png" alt="Image 4">
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/bavindushan/malcolm-s_photography_website.git">
+                        <img class="projectimg" src="img/project/pexels-cottonbro-3584931.jpg" alt="">
+                    </a>
+                </div>
+                <h3>Malcolm's Photography Website</h3>
+                <p>
+                    This project was developed to showcase Malcolm Lismore's portfolio, utilizing HTML5, CSS3,
+                    JavaScript, PHP, and MySQL for an engaging design and easy navigation.</p>
+                <div class="project_skills">
+                    <img src="img/java-script.png" alt="Image 2">
+                    <img src="img/mysql.png" alt="Image 6">
+                    <img src="img/html.png" alt="Image 7">
+                    <img src="img/text.png" alt="Image 8">
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/bavindushan/Grifindo-Travels-Vehicle-Rental-Hire-System.git">
+                        <img class="projectimg" src="img/project/pexels-rodolfoclix-1521580.jpg" alt="">
+                    </a>
+                </div>
+                <h3>Grifindo Travels System</h3>
+                <p>
+                    This C# application for Grifindo Travels was developed using C#,MySQL and Visual Studio to
+                    calculate and record rental and hire charges for various vehicles, including cars, SUVs, and
+                    vans, supporting both driver-assisted and self-drive rental options. </p>
+                <div class="project_skills">
+                    <img src="img/c-sharp.png" alt="Image 3">
+                    <img src="img/mysql.png" alt="Image 6">
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/bavindushan/Quiet-Attic-Films-Database-Design.git">
+                        <img class="projectimg" src="img/project/pexels-donaldtong94-66134.jpg" alt="">
+                    </a>
+                </div>
+                <h3>Quiet Attic Films Database Design</h3>
+                <p>
+                    This database for Quiet Attic Films was developed using C# and MySQL to organize key data on
+                    clients, assets, and production workflows, improving operations and collaboration within the
+                    company</p>
+                <div class="project_skills">
+                    <img src="img/c-sharp.png" alt="Image 3">
+                    <img src="img/mysql.png" alt="Image 6">
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/bavindushan/LAN-Design-Implementation-for-Alliance-Health.git">
+                        <img class="projectimg" src="img/project/pexels-sejio402-6466143.jpg" alt="">
+                    </a>
+                </div>
+                <h3>LAN Design & Implementation for Alliance Health</h3>
+                <p>
+                    This project involved designing and implementing an efficient network for the Matara branch using
+                    Cisco Packet Tracer, covering LAN/WLAN standards, topology selection, VLAN configuration, and
+                    essential network devices. </p>
+                <div class="project_skills">
+                    <img src="img/cisco.png" alt="Image 1">
+                </div>
+            </div>
         </div>
 
         <!-- -------------------------------------------------------------------------------------------- -->
 
-        <div class="services-container">
-
-            <div class="service-box">
-                <div class="services-info">
-                    <a href="https://github.com/bavindushan/MOS_Burgers_Project.git">
-                        <h4>MOS Burgers Project</h4>
-                    </a>
-                    <p>
-                        The MOS Burgers Project is a web application developed using HTML5, CSS3, JavaScript, and JSON
-                        to streamline the burger ordering process, providing dynamic product listings, real-time order
-                        management, and PDF generation for orders.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="services-info">
-                    <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git">
-                        <h4>Bus Seat Reservation System</h4>
-                    </a>
-                    <p>This system was developed using Java, with Data Structures and Algorithms for efficient queue
-                        operations, and implemented in Microsoft Visual Studio Code.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="services-info">
-                    <a href="https://github.com/bavindushan/Sampath_Food_City_System.git">
-                        <h4>Sampath Food City System</h4>
-                    </a>
-                    <p>This project was developed using Python, adhering to SOLID principles and clean coding practices,
-                        with pytest for testing, and implemented in Microsoft Visual Studio Code.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="services-info">
-                    <a href="https://github.com/bavindushan/malcolm-s_photography_website.git">
-                        <h4>Malcolm's Photography Website</h4>
-                    </a>
-                    <p>This project was developed to showcase Malcolm Lismore's portfolio, utilizing HTML5, CSS3,
-                        JavaScript, PHP, and MySQL for an engaging design and easy navigation.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="services-info">
-                    <a href="https://github.com/bavindushan/Grifindo-Travels-Vehicle-Rental-Hire-System.git">
-                        <h4>Grifindo Travels System</h4>
-                    </a>
-                    <p>This C# application for Grifindo Travels was developed using C#,MySQL and Visual Studio to
-                        calculate and record rental and hire charges for various vehicles, including cars, SUVs, and
-                        vans, supporting both driver-assisted and self-drive rental options.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="services-info">
-                    <a href="https://github.com/bavindushan/Quiet-Attic-Films-Database-Design.git">
-                        <h4>Quiet Attic Films Database Design</h4>
-                    </a>
-                    <p>This database for Quiet Attic Films was developed using C# and MySQL to organize key data on
-                        clients, assets, and production workflows, improving operations and collaboration within the
-                        company.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="services-info">
-                    <a href="https://github.com/bavindushan/LAN-Design-Implementation-for-Alliance-Health.git">
-                        <h4>LAN Design & Implementation for Alliance Health</h4>
-                    </a>
-                    <p>This project involved designing and implementing an efficient network for the Matara branch using
-                        Cisco Packet Tracer, covering LAN/WLAN standards, topology selection, VLAN configuration, and
-                        essential network devices.</p>
-                </div>
-            </div>
-            <!-- <div class="service-box">
-                <div class="services-info">
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div> -->
-
-
-        </div>
     </section>
 
     <!-- <section class="testimonials" id="testimonials">
