@@ -1,3 +1,7 @@
+
+
+
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
@@ -32,6 +36,20 @@ emailjs.init("ZZlw1VUIyqwMyEb1R"); // Replace with your EmailJS User ID
 // Add event listener to the form
 document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
+
+    // Validate form inputs
+    if (!validateForm()) return;
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(document.getElementById("email").value)) {
+        Swal.fire({
+            icon: "error",
+            title: "Error!",
+            text: "Please enter a valid email address.",
+        });
+        return;
+    }
 
     // Collect form data
     const templateParams = {

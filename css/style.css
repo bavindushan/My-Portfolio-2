@@ -770,3 +770,35 @@ footer ul li {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+.skill-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.skill-carousel {
+    display: flex;
+    gap: 2rem;
+}
+
+.skill-carousel img {
+    width: 80px; /* Adjust the size as per your requirement */
+    height: 80px; /* Make sure width and height are equal for a circular shape */
+    border-radius: 50%; /* This will round the images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.skill-carousel img:hover {
+    transform: scale(1.2); /* Enlarge the image by 1.2x when hovered */
+}
+
+.projectimg{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
