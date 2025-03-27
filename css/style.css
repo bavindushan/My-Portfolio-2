@@ -895,3 +895,48 @@ footer ul li {
     margin-top: 8px;
     margin-bottom: 20px;
 }
+
+
+
+
+
+/* Add styles to make carousel responsive */
+.skill-carousel-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skill-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-carousel img {
+    width: 80px;  /* Default size */
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+    .skill-carousel img {
+        width: 60px;  /* Medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-carousel img {
+        width: 50px;  /* Smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-carousel img {
+        width: 40px;  /* Very small screens */
+    }
+}
