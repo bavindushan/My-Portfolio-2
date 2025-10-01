@@ -4,561 +4,557 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bvindu's Portfolio Website</title>
+    <title>Bavindu Shan - Software Engineer</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
 
-    <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="header">
-        <a href="#home" class="logo">Bavindu
-            <span>Shan</span></a>
-
+    <header data-aos="fade-down" data-aos-duration="1000" class="header">
+        <a href="#home" class="logo">Bavindu<span>Shan</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
-
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <!-- <a href="#testimonials">Testimonials</a> -->
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="home" id="home">
-        <div data-aos="zoom-out" class="home-content">
-            <h1>Hi! It's <span>Bavindu</span></h1>
-            <h3 class="text-animation">I'm a&nbsp;<span></span></h3>
-            <p>I’m Bavindu Shan, a passionate and results-driven Software Engineering undergraduate with
-                hands-on experience in backend development, API design, and full-stack systems. I specialize in Node.js,
-                Express.js, C#, MySQL, Spring Boot, and Angular, with a strong focus on building scalable, secure,
-                and high-performance applications.I thrive on creating innovative solutions and
-                enjoy
-                collaborating on open-source projects and cutting-edge software ideas.
+        <div data-aos="fade-right" data-aos-duration="1200" class="home-content">
+            <div class="intro-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1><span class="highlight">Bavindu Shan</span></h1>
+                <h3 class="text-animation">I'm a&nbsp;<span></span></h3>
+            </div>
 
-                Currently, I am focused on enhancing my skills in software engineering practices and exploring new
-                technologies such as ASP.NET, AWS, and Artificial Intelligence. My approach is fueled by creativity, a
-                commitment to quality, and a love for late-night coding sessions. You can connect with me using the
-                links below.</p>
+            <p class="bio-text">A passionate Software Engineering undergraduate specializing in backend development, API
+                design, and full-stack systems. I build scalable, secure, and high-performance applications using
+                Node.js, Express.js, Spring Boot, Angular, and modern cloud technologies with DevOps.</p>
 
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/bavindu-shan/"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/bavindushan"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/bavindu-shan/" aria-label="LinkedIn"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/bavindushan" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="#" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
             </div>
 
             <div class="btn-group">
-                <a href="./resume/My Resume.pdf" download="resume(bavindu).pdf" class="btn">Resume</a>
-                <a href="#contact" class="btn">Contact</a>
+                <a href="./resume/My Resume.pdf" download="resume(bavindu).pdf" class="btn btn-primary">
+                    <i class='bx bx-download'></i> Download Resume
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class='bx bx-message-dots'></i> Let's Talk
+                </a>
             </div>
-
         </div>
 
-        <div data-aos="zoom-in" class="home-img">
-            <img src="image.jpg" alt="">
+        <div data-aos="fade-left" data-aos-duration="1200" class="home-img">
+            <div class="img-wrapper">
+                <img src="image.jpg" alt="Bavindu Shan">
+                <div class="img-backdrop"></div>
+            </div>
         </div>
     </section>
 
-    <div class="skill-carousel-container">
-        <!-- skill carousel -->
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0"
-            class="skill-carousel">
-            <img src="img/programing.png" alt="Programming">
-            <img src="img/java.png" alt="Java">
-            <img src="img/java-script.png" alt="JavaScript">
-            <img src="img/c-sharp.png" alt="C#">
-            <img src="img/python.png" alt="Python">
-            <img src="img/leaf.png" alt="Leaf">
-            <img src="img/nodejs.png" alt="Node">
-            <img src="img/mysql.png" alt="MySQL">
-            <img src="img/html.png" alt="HTML">
-            <img src="img/text.png" alt="Text">
-            <img src="img/xml.png" alt="XML">
-            <img src="img/cisco.png" alt="Cisco">
-            <img src="img/firebase.png" alt="Firebase">
+    <div class="skill-showcase">
+        <div data-aos="fade-up" data-aos-duration="1000" class="skill-carousel">
+            <div class="skill-item"><img src="img/java.png" alt="Java"></div>
+            <div class="skill-item"><img src="img/java-script.png" alt="JavaScript"></div>
+            <div class="skill-item"><img src="img/c-sharp.png" alt="C#"></div>
+            <div class="skill-item"><img src="img/python.png" alt="Python"></div>
+            <div class="skill-item"><img src="img/leaf.png" alt="Spring"></div>
+            <div class="skill-item"><img src="img/nodejs.png" alt="Node.js"></div>
+            <div class="skill-item"><img src="img/mysql.png" alt="MySQL"></div>
+            <div class="skill-item"><img src="img/html.png" alt="HTML"></div>
+            <div class="skill-item"><img src="img/text.png" alt="CSS"></div>
+            <div class="skill-item"><img src="img/firebase.png" alt="Firebase"></div>
         </div>
     </div>
 
-
-
     <section class="education" id="education">
-        <h2 class="heading">Education</h2>
+        <h2 class="heading" data-aos="fade-up">My <span>Education</span></h2>
 
         <div class="timeline-items">
-
-            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
-                class="timeline-item">
+            <div data-aos="fade-right" data-aos-duration="1000" class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Oct 2022 – Sep 2024</div>
                 <div class="timeline-content">
-                    <h3>BTEC HND in Computing-Software Engineering</h3>
-                    <p>Completed a Pearson (UK) BTEC HND in Computing with a <b>Distinction pass</b> from ESOFT Metro
-                        Campus.
-                        This qualification laid a strong foundation in software engineering, covering topics like
-                        programming, systems analysis, and database management. </p>
+                    <h3>BTEC HND in Computing - Software Engineering</h3>
+                    <p>Completed a Pearson (UK) BTEC HND in Computing with a <strong>Distinction pass</strong> from
+                        ESOFT Metro Campus. Built a strong foundation in software engineering, covering programming,
+                        systems analysis, and database management.</p>
                 </div>
-
             </div>
 
-            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
-                class="timeline-item">
+            <div data-aos="fade-left" data-aos-duration="1000" class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Sep 2024 – Present</div>
                 <div class="timeline-content">
-                    <h3>Dip. in ICET Certified Developer </h3>
-                    <p>
-                        Enrolled in the Institute of Computer Engineering Technology (iCET), where I am expanding my
-                        knowledge in computer software engineering and earning an ICET Certified Developer credential.
-                        This program emphasizes hands-on learning and industry-relevant skills. GPA:3.85 </p>
+                    <h3>Diploma in ICET Certified Developer</h3>
+                    <p>Enrolled at the Institute of Computer Engineering Technology (iCET), expanding knowledge in
+                        computer software engineering. This program emphasizes hands-on learning and industry-relevant
+                        skills. <strong>GPA: 3.85</strong></p>
                 </div>
-
             </div>
 
-            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
-                class="timeline-item">
+            <div data-aos="fade-right" data-aos-duration="1000" class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Jan 2025 – Present</div>
                 <div class="timeline-content">
                     <h3>BEng (Hons) in Software Engineering</h3>
-                    <p>
-                        Currently pursuing a Bachelor of Engineering (Hons) in Software Engineering (TOP UP) at London
-                        Metropolitan University, UK. This program enhances my expertise in software design, development,
-                        and engineering principles, preparing me for advanced roles in the tech industry. </p>
+                    <p>Currently pursuing a Bachelor of Engineering (Hons) in Software Engineering (TOP UP) at London
+                        Metropolitan University, UK. Enhancing expertise in software design, development, and
+                        engineering principles.</p>
                 </div>
-
             </div>
         </div>
     </section>
-
-    <!-- -------------------------------------------Services---------------------------------------------------- -->
-
 
     <section class="services" id="services">
-        <h2 class="heading">Services</h2>
+        <h2 class="heading" data-aos="fade-up">My <span>Services</span></h2>
 
-        <div class="wrapper">
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="card">
-                <img src="img/srvices/pexels-mizunokozuki-12899157.jpg" alt="">
-                <div class="info">
-                    <h1>Back-End Development</h1>
-                    <p>I specialize in developing scalable and secure back-end systems using Spring Boot and Hibernate.
-                        I design RESTful APIs, manage databases with MySQL, and implement security measures such as
-                        JASYPT encryption to ensure data protection.</p>
-
+        <div class="services-grid">
+            <div data-aos="zoom-in" data-aos-duration="800" class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-server'></i>
                 </div>
-            </div>
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="card">
-                <img src="img/srvices/pexels-realtoughcandy-11035543.jpg" alt="">
-                <div class="info">
-                    <h1>Front-End Development</h1>
-                    <p>I build interactive and responsive web applications using Angular, leveraging my expertise in
-                        JavaScript, Bootstrap, and Tailwind CSS to create modern and user-friendly interfaces.</p>
-
-                </div>
-            </div>
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="card">
-                <img src="img/srvices/pexels-fotios-photos-16129728.jpg" alt="">
-                <div class="info">
-                    <h1>Full-Stack Development</h1>
-                    <p>With experience in both front-end and back-end technologies, I develop complete web applications,
-                        ensuring seamless integration between UI/UX and database management.</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="card">
-                <img src="img/srvices/pexels-cookiecutter-17489153.jpg" alt="">
-                <div class="info">
-                    <h1>Database & Cloud Services</h1>
-                    <p>I design and optimize databases using MySQL and SQL Server, ensuring efficient data handling.
-                        Additionally, I have foundational knowledge of Microsoft Azure, allowing me to assist with basic
-                        cloud storage and service deployments.</p>
-
-                </div>
-            </div>
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="card">
-                <img src="img/srvices/pexels-pixabay-60504.jpg" alt="">
-                <div class="info">
-                    <h1>Software Architecture & Security</h1>
-                    <p>I build maintainable and scalable software systems following SOLID principles and layered
-                        architecture. My cybersecurity expertise includes data encryption, secure authentication, and
-                        best practices for protecting sensitive information.</p>
-
-                </div>
-            </div>
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="card">
-                <img src="img/srvices/pexels-tara-winstead-8386437.jpg" alt="">
-                <div class="info">
-                    <h1>AI & Automation</h1>
-                    <p>I leverage GitHub Copilot and other AI-powered tools to enhance coding efficiency and automate
-                        development tasks. My knowledge of generative AI enables me to integrate AI-driven features into
-                        applications.</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="card">
-                <img src="img/srvices/pexels-karolina-grabowska-7877017.jpg" alt="">
-                <div class="info">
-                    <h1>Training & Consulting</h1>
-                    <p>I provide IT training and consulting services(free), helping individuals and teams improve their
-                        programming skills, software development knowledge.</p>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </section>
-    <!-- ------------------------------------------------------------------------------------------------------- -->
-
-    <section class="services" id="projects">
-        <h2 class="heading">Projects</h2>
-
-        <!-- ------------------------------------------Projects-------------------------------------------------- -->
-
-        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/AI_Doctor_2.0.git">
-                        <img class="projectimg" src="img/project/aidoctor.jpg" alt="">
-                    </a>
-                </div>
-                <h3>AI Doctor Agent 2.0</h3>
-                <p>
-                    Developed a multimodal AI-driven doctor assistant using Python, Gradio, and SQLite. Integrated
-                    Whisper for real-time speech transcription, LLaMA 4 Vision for medical image analysis, and
-                    ElevenLabs/gTTS for lifelike voice responses. Designed a layered architecture with Groq API for
-                    high-speed inference, enabling interactive voice-and-vision healthcare consultation.
+                <h3>Back-End Development</h3>
+                <p>Developing scalable and secure back-end systems using Spring Boot and Hibernate. Designing RESTful
+                    APIs, managing databases with MySQL, and implementing security measures such as JASYPT encryption.
                 </p>
-                <div class="project_skills">
-                    <img src="img/python.png" alt="Image 1">
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100" class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-code-alt'></i>
                 </div>
+                <h3>Front-End Development</h3>
+                <p>Building interactive and responsive web applications using Angular, JavaScript, Bootstrap, and
+                    Tailwind CSS to create modern and user-friendly interfaces.</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200" class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-laptop'></i>
+                </div>
+                <h3>Full-Stack Development</h3>
+                <p>Developing complete web applications with seamless integration between UI/UX and database management,
+                    ensuring end-to-end functionality.</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300" class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-data'></i>
+                </div>
+                <h3>Database & Cloud Services</h3>
+                <p>Designing and optimizing databases using MySQL and SQL Server. Foundational knowledge of Microsoft
+                    Azure for cloud storage and service deployments.</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-shield'></i>
+                </div>
+                <h3>Software Architecture & Security</h3>
+                <p>Building maintainable and scalable systems following SOLID principles. Expertise in data encryption,
+                    secure authentication, and protecting sensitive information.</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500" class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-brain'></i>
+                </div>
+                <h3>AI & Automation</h3>
+                <p>Leveraging GitHub Copilot and AI-powered tools to enhance coding efficiency. Integrating AI-driven
+                    features into applications using generative AI.</p>
             </div>
         </div>
-
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git">
-                        <img class="projectimg" src="img/project/AiFaceDetection.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Face Recognition Attendance System</h3>
-                <p>
-                    Developed an AI-powered attendance system using Python, OpenCV, and Firebase, automating
-                    attendance tracking with high accuracy. Achieved 95%+ accuracy, significantly reducing manual effort
-                    by 80% and streamlining the
-                    attendance process. The system ensures real-time face recognition, prevents duplicate entries, and
-                    provides secure and
-                    efficient data management.
-                </p>
-                <div class="project_skills">
-                    <img src="img/python.png" alt="Image 1">
-                    <img src="img/firebase.png" alt="Image 6">
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git">
-                        <img class="projectimg" src="img/project/pexels-rdne-6129119.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Hospital Management System</h3>
-                <p>
-                    Designed a layered architecture system using JavaFX, XML, and MySQL for efficient hospital
-                    management (Standalone). Implemented real-time appointment scheduling, staff workload management,
-                    and secure patient record handling with Jasypt encryption. Integrated JasperReports for automated
-                    billing and dynamic reporting with rollback support.
-                </p>
-                <div class="project_skills">
-                    <img src="img/java.png" alt="Image 1">
-                    <img src="img/mysql.png" alt="Image 6">
-                    <img src="img/text.png" alt="Image 8">
-                    <img src="img/xml.png" alt="Image 9">
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/MOS_Burgers_Project.git">
-                        <img class="projectimg" src="img/project/pexels-nishess-shakya-401526881-15076692.jpg" alt="">
-                    </a>
-                </div>
-                <h3>MOS Burgers Project</h3>
-                <p>
-                    Built a Spring Boot & Hibernate-based ordering system, improving efficiency by 20% with dynamic
-                    product listings.
-                    Implemented real-time order management via REST APIs, reducing processing errors.
-                    Integrated JasperReports for automated PDF generation and used MySQL, JavaScript, HTML, and CSS for
-                    a seamless experience. </p>
-                <div class="project_skills">
-                    <img src="img/java.png" alt="Image 1">
-                    <img src="img/java-script.png" alt="Image 2">
-                    <img src="img/leaf.png" alt="Image 5">
-                    <img src="img/mysql.png" alt="Image 6">
-                    <img src="img/html.png" alt="Image 7">
-                    <img src="img/text.png" alt="Image 8">
-                    <img src="img/xml.png" alt="Image 9">
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git">
-                        <img class="projectimg" src="img/project/pexels-artyom-kulakov-1190754-2266406.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Bus Seat Reservation System</h3>
-                <p>
-                    This system was developed using Java, with Data Structures and Algorithms for efficient queue
-                    operations, and implemented in Microsoft Visual Studio Code.</p>
-                <div class="project_skills">
-                    <img src="img/java.png" alt="Image 1">
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/Sampath_Food_City_System.git">
-                        <img class="projectimg" src="img/project/pexels-fatih-turan-63325184-30996488.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Sampath Food City System</h3>
-                <p>
-                    This project was developed using Python, adhering to SOLID principles and clean coding practices,
-                    with pytest for testing, and implemented in Microsoft Visual Studio Code. </p>
-                <div class="project_skills">
-                    <img src="img/python.png" alt="Image 4">
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/malcolm-s_photography_website.git">
-                        <img class="projectimg" src="img/project/pexels-cottonbro-3584931.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Malcolm's Photography Website</h3>
-                <p>
-                    This project was developed to showcase Malcolm Lismore's portfolio, utilizing HTML5, CSS3,
-                    JavaScript, PHP, and MySQL for an engaging design and easy navigation.</p>
-                <div class="project_skills">
-                    <img src="img/java-script.png" alt="Image 2">
-                    <img src="img/mysql.png" alt="Image 6">
-                    <img src="img/html.png" alt="Image 7">
-                    <img src="img/text.png" alt="Image 8">
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/Grifindo-Travels-Vehicle-Rental-Hire-System.git">
-                        <img class="projectimg" src="img/project/pexels-rodolfoclix-1521580.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Grifindo Travels System</h3>
-                <p>
-                    This C# application for Grifindo Travels was developed using C#,MySQL and Visual Studio to
-                    calculate and record rental and hire charges for various vehicles, including cars, SUVs, and
-                    vans, supporting both driver-assisted and self-drive rental options. </p>
-                <div class="project_skills">
-                    <img src="img/c-sharp.png" alt="Image 3">
-                    <img src="img/mysql.png" alt="Image 6">
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/Quiet-Attic-Films-Database-Design.git">
-                        <img class="projectimg" src="img/project/pexels-donaldtong94-66134.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Quiet Attic Films Database Design</h3>
-                <p>
-                    This database for Quiet Attic Films was developed using C# and MySQL to organize key data on
-                    clients, assets, and production workflows, improving operations and collaboration within the
-                    company</p>
-                <div class="project_skills">
-                    <img src="img/c-sharp.png" alt="Image 3">
-                    <img src="img/mysql.png" alt="Image 6">
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
-            <div class="timeline-content">
-                <div>
-                    <a href="https://github.com/bavindushan/LAN-Design-Implementation-for-Alliance-Health.git">
-                        <img class="projectimg" src="img/project/pexels-sejio402-6466143.jpg" alt="">
-                    </a>
-                </div>
-                <h3>LAN Design & Implementation for Alliance Health</h3>
-                <p>
-                    This project involved designing and implementing an efficient network for the Matara branch using
-                    Cisco Packet Tracer, covering LAN/WLAN standards, topology selection, VLAN configuration, and
-                    essential network devices. </p>
-                <div class="project_skills">
-                    <img src="img/cisco.png" alt="Image 1">
-                </div>
-            </div>
-        </div>
-
-        <!-- -------------------------------------------------------------------------------------------- -->
-
     </section>
 
-    <!-- <section class="testimonials" id="testimonials">
-        <div class="testimonials-box">
-            <h2 class="heading">Testimonials</h2>
+    <section class="projects" id="projects">
+        <h2 class="heading" data-aos="fade-up">Featured <span>Projects</span></h2>
 
-            <div class="wrapper">
-                <div class="testimonial-item">
-                    <img src="1.jpg" alt="">
-                    <h2>Anna</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
+        <div class="projects-container">
 
+            
+            <!-- Greens Customer Mobile Application -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/aidoctor.jpg" alt="Greens Customer App">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Greens_Customer_App.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
                     </div>
-                    <p>Working with this team was a fantastic experience! They understood my vision perfectly and
-                        brought it to life with creativity and professionalism. I couldn’t be happier with the results!
-                    </p>
                 </div>
-
-                <div class="testimonial-item">
-                    <img src="2.jpg" alt="">
-                    <h2>Bethany</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-
+                <div class="project-info">
+                    <h3>Greens Customer Mobile App</h3>
+                    <p>REST APIs for plant ordering & monitoring built with Express.js, JWT, Prisma, and Swagger
+                        documentation.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">Prisma</span>
+                        <span class="tech-badge">JWT</span>
                     </div>
-                    <p>This team exceeded my expectations! Their attention to detail and commitment to delivering
-                        quality work made all the difference. I highly recommend their services!</p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="3.jpg" alt="">
-                    <h2>David</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-
-                    </div>
-                    <p>I was impressed by their expertise and dedication. They transformed my ideas into reality with
-                        precision and creativity. Truly a pleasure to work with!</p>
                 </div>
             </div>
+
+            <!-- Quick Eats Food Delivery System -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/aidoctor.jpg" alt="Quick Eats Food Delivery System">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Quick_Eats_System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Quick Eats Food Delivery System</h3>
+                    <p>Backend system with Express.js, Prisma, MySQL, JWT for order management, real-time tracking, and
+                        secure rider coordination.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">Prisma</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Star Events Ticketing System -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/aidoctor.jpg" alt="Star Events Ticketing System">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Star_Events_Ticketing_System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Star Events Ticketing System</h3>
+                    <p>ASP.NET Core MVC ticketing platform with secure payments, role-based authentication, and
+                        real-time ticket sales tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">ASP.NET Core</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/aidoctor.jpg" alt="AI Doctor Agent">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/E-Shift-Standalone-System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-Shift Transportation Management</h3>
+                    <p>C# desktop system for goods transport management with MySQL, implementing MVC architecture and
+                        real-time vehicle tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/aidoctor.jpg" alt="AI Doctor Agent">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/AI_Doctor_2.0.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>AI Doctor Agent 2.0</h3>
+                    <p>Multimodal AI-driven healthcare assistant using Python, Gradio, and SQLite. Integrated Whisper
+                        for speech transcription and LLaMA 4 Vision for medical image analysis.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">AI/ML</span>
+                        <span class="tech-badge">SQLite</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/AiFaceDetection.jpg" alt="Face Recognition">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Face Recognition Attendance System</h3>
+                    <p>AI-powered attendance system using OpenCV and Firebase with 95%+ accuracy, reducing manual effort
+                        by 80%.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OpenCV</span>
+                        <span class="tech-badge">Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/pexels-rdne-6129119.jpg" alt="Hospital Management">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Hospital Management System</h3>
+                    <p>Layered architecture system using JavaFX and MySQL for efficient hospital management with secure
+                        patient record handling.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">JavaFX</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/pexels-nishess-shakya-401526881-15076692.jpg" alt="MOS Burgers">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/MOS_Burgers_Project.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>MOS Burgers Project</h3>
+                    <p>Spring Boot & Hibernate-based ordering system improving efficiency by 20% with real-time order
+                        management via REST APIs.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">Hibernate</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/pexels-artyom-kulakov-1190754-2266406.jpg" alt="">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Bus_Seat_Reservation_System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Bus Seat Reservation System</h3>
+                    <p>This system was developed using Java, with Data Structures and Algorithms for efficient queue
+                        operations, and implemented in Microsoft Visual Studio Code.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/pexels-fatih-turan-63325184-30996488.jpg" alt="">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Sampath_Food_City_System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Sampath Food City System</h3>
+                    <p>This project was developed using Python, adhering to SOLID principles and clean coding practices,
+                        with pytest for testing, and implemented in Microsoft Visual Studio Code.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/pexels-cottonbro-3584931.jpg" alt="">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/malcolm-s_photography_website.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Malcolm's Photography Website</h3>
+                    <p>This project was developed to showcase Malcolm Lismore's portfolio, utilizing HTML5, CSS3,
+                        JavaScript, PHP, and MySQL for an engaging design and easy navigation.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">PHP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/pexels-rodolfoclix-1521580.jpg" alt="">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Grifindo-Travels-Vehicle-Rental-Hire-System.git"
+                            class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Grifindo Travels System</h3>
+                    <p>This C# application for Grifindo Travels was developed using C#,MySQL and Visual Studio to
+                        calculate and record rental and hire charges for various vehicles, including cars, SUVs, and
+                        vans, supporting both driver-assisted and self-drive rental options.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/pexels-donaldtong94-66134.jpg" alt="">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Quiet-Attic-Films-Database-Design.git"
+                            class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Quiet Attic Films Database Design</h3>
+                    <p>This database for Quiet Attic Films was developed using C# and MySQL to organize key data on
+                        clients, assets, and production workflows, improving operations and collaboration within the
+                        company.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/pexels-sejio402-6466143.jpg" alt="">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/LAN-Design-Implementation-for-Alliance-Health.git"
+                            class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>LAN Design & Implementation for Alliance Health</h3>
+                    <p>This project involved designing and implementing an efficient network for the Matara branch using
+                        Cisco Packet Tracer, covering LAN/WLAN standards, topology selection, VLAN configuration, and
+                        essential network devices.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Cisco</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section> -->
+    </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+        <h2 class="heading" data-aos="fade-up">Get In <span>Touch</span></h2>
 
-        <form class="contact-form" id="contact-form">
-            <div class="input-group">
-                <div class="input-box">
+        <form class="contact-form" id="contact-form" data-aos="fade-up" data-aos-duration="1000">
+            <div class="input-row">
+                <div class="input-group">
+                    <i class='bx bx-user'></i>
                     <input type="text" id="full-name" placeholder="Full Name" required>
-                    <input type="email" id="email" placeholder="Email" required>
                 </div>
-                <div class="input-box">
-                    <input type="number" id="phone" placeholder="Phone Number" required>
+                <div class="input-group">
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <i class='bx bx-phone'></i>
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <i class='bx bx-message-square-detail'></i>
                     <input type="text" id="subject" placeholder="Subject" required>
                 </div>
             </div>
 
-            <div class="input-group-2">
-                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
+            <div class="input-group textarea-group">
+                <i class='bx bx-message-dots'></i>
+                <textarea id="message" rows="8" placeholder="Your Message" required></textarea>
             </div>
-        </form>
 
+            <button type="submit" class="btn btn-primary">
+                <i class='bx bx-send'></i> Send Message
+            </button>
+        </form>
     </section>
 
     <footer class="footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/bavindu-shan"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/bavindushan"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-        </div>
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bavindu-shan" aria-label="LinkedIn"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/bavindushan" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="#" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+            </div>
 
-            <li>
+            <nav class="footer-nav">
+                <a href="#home">About</a>
                 <a href="#services">Services</a>
-            </li>
-
-            <li>
-                <a href="#home">About Me</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-            <li>
                 <a href="#projects">Projects</a>
-            </li>
-        </ul>
-        <p class="copyright">
-            © Bavindu Shan | All rights Reserved.
-        </p>
+                <a href="#contact">Contact</a>
+            </nav>
 
+            <p class="copyright">© 2025 Bavindu Shan. All Rights Reserved.</p>
+        </div>
     </footer>
 
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "YOUR_PUBLIC_KEY",
-            });
-        })();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="app/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init(3000);
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
     </script>
-
 </body>
 
 </html>
