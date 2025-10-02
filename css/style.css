@@ -232,7 +232,7 @@ section {
     0%, 20% { content: "Backend Developer"; }
     21%, 40% { content: "Frontend Developer"; }
     41%, 60% { content: "DevOps Engineer"; }
-    61%, 80% { content: "Database Architect"; }
+    61%, 80% { content: "Database Designer"; }
     81%, 100% { content: "System Engineer"; }
 }
 
@@ -246,6 +246,7 @@ section {
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 3rem;
+    text-align:justify
 }
 
 .social-icons {
@@ -375,14 +376,14 @@ section {
     width: 6rem;
     height: 6rem;
     object-fit: contain;
-    filter: grayscale(100%);
-    opacity: 0.7;
+    filter: grayscale(0%);
+    opacity: 1;
     transition: 0.3s ease;
 }
 
 .skill-item img:hover {
-    filter: grayscale(0%);
-    opacity: 1;
+    filter: grayscale(100%);
+    opacity: 0.7;
     transform: scale(1.2);
 }
 
