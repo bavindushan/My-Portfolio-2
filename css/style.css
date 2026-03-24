@@ -231,7 +231,7 @@ section {
 @keyframes words {
     0%, 20% { content: "Backend Developer"; }
     21%, 40% { content: "Frontend Developer"; }
-    41%, 60% { content: "DevOps Engineer"; }
+    41%, 60% { content: "DevSecOps Engineer"; }
     61%, 80% { content: "Database Designer"; }
     81%, 100% { content: "System Engineer"; }
 }
