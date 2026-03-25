@@ -23,6 +23,7 @@
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
+            <a href="#experience">Experiences</a>
             <a href="#education">Education</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
@@ -64,10 +65,14 @@
 
         <div data-aos="fade-left" data-aos-duration="1200" class="home-img">
             <div class="img-wrapper">
-                <img src="image.jpg" alt="Bavindu Shan">
-                <div class="img-backdrop"></div>
+                <div class="img-frame">
+                    <img src="image2.jpeg" alt="Bavindu Shan">
+                </div>
+                <div class="img-glow"></div>
+                <div class="img-accent-bar"></div>
             </div>
         </div>
+        
     </section>
 
     <div class="skill-showcase">
@@ -113,6 +118,62 @@
 
         </div>
     </div>
+
+    <section class="experience" id="experience">
+        <h2 class="heading" data-aos="fade-up">My <span>Experience</span></h2>
+
+        <div class="timeline-items">
+
+            <!-- Current Role -->
+            <div data-aos="fade-right" data-aos-duration="1000" class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Nov 2025 – Present</div>
+                <div class="timeline-content">
+                    <h3>Trainee DevOps Engineer</h3>
+                    <h4>Epic Technology Group, Battaramulla</h4>
+                    <p>
+                        Supporting production, QA, and UAT environments using Docker, Kubernetes, and CI/CD pipelines.
+                        Troubleshooting live system issues through monitoring, log analysis, and incident resolution.
+                        Contributing to AWS and on-prem infrastructure while working on high-availability FinTech
+                        systems
+                        with strong security requirements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Internship 1 -->
+            <div data-aos="fade-left" data-aos-duration="1000" class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">July 2025 – Nov 2025</div>
+                <div class="timeline-content">
+                    <h3>Intern Software Engineer</h3>
+                    <h4>Gampaha Wickramarachchi University</h4>
+                    <p>
+                        Developed and deployed a full-stack recruitment system using Express.js and Vue.js.
+                        Managed deployments on cloud infrastructure using Docker, Nginx, and GitHub Actions.
+                        Automated CI/CD pipelines, server configurations, and implemented secure role-based access
+                        with workflow tracking.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Internship 2 -->
+            <div data-aos="fade-right" data-aos-duration="1000" class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Apr 2025 – June 2025</div>
+                <div class="timeline-content">
+                    <h3>Intern Back-end Engineer</h3>
+                    <h4>ZephyraTech (Startup - Remote)</h4>
+                    <p>
+                        Built scalable REST APIs using Node.js, Express.js, Prisma, and MySQL.
+                        Collaborated in Agile teams to deliver backend services for production-grade applications,
+                        focusing on performance, scalability, and clean architecture.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <section class="education" id="education">
         <h2 class="heading" data-aos="fade-up">My <span>Education</span></h2>
@@ -223,88 +284,60 @@
 
         <div class="projects-container">
 
-            <!-- Greens Customer Mobile Application -->
+            <!-- Spring Petclinic DevSecOps Project -->
             <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
                 <div class="project-image">
-                    <img src="img/project/greens-mobile-app.jpg" alt="Greens Customer App">
+                    <img src="img/project/devsecops.webp" alt="Spring Petclinic DevSecOps Project">
                     <div class="project-overlay">
-                        <a href="https://github.com/bavindushan/Greens_Customer_App.git" class="project-link">
+                        <a href="https://github.com/bavindushan/spring-petclinic-devsecops.git" class="project-link">
                             <i class='bx bx-link-external'></i>
                         </a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Greens Customer Mobile App</h3>
-                    <p>REST APIs for plant ordering & monitoring built with Express.js, JWT, Prisma, and Swagger
-                        documentation.</p>
+                    <h3>Spring Petclinic DevSecOps Project</h3>
+                    <p>
+                        Implemented a DevSecOps pipeline by containerizing the application with Docker on Red Hat Linux,
+                        automating CI/CD with Jenkins and GHCR, deploying via Argo CD to Kubernetes with HPA, and
+                        managing traffic using Nginx as a reverse proxy and load balancer.
+                    </p>
                     <div class="project-tech">
-                        <span class="tech-badge">Express.js</span>
-                        <span class="tech-badge">Prisma</span>
-                        <span class="tech-badge">JWT</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Kubernetes</span>
+                        <span class="tech-badge">Jenkins</span>
+                        <span class="tech-badge">Argo CD</span>
+                        <span class="tech-badge">Nginx</span>
+                        <span class="tech-badge">GHCR</span>
+                        <span class="tech-badge">DevSecOps</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Quick Eats Food Delivery System -->
+            <!-- Netflix Clone Deployment -->
             <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
                 <div class="project-image">
-                    <img src="img/project/quick-eats.jpg" alt="Quick Eats Food Delivery System">
+                    <img src="img/project/devops-services-trends-1200x675.jpg" alt="Netflix Clone Deployment">
                     <div class="project-overlay">
-                        <a href="https://github.com/bavindushan/Quick_Eats_System.git" class="project-link">
+                        <a href="https://github.com/bavindushan" class="project-link">
                             <i class='bx bx-link-external'></i>
                         </a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Quick Eats Food Delivery System</h3>
-                    <p>Backend system with Express.js, Prisma, MySQL, JWT for order management, real-time tracking, and
-                        secure rider coordination.</p>
+                    <h3>Netflix Clone Deployment</h3>
+                    <p>
+                        Deployed a containerized Netflix clone on AWS EC2 using Docker, implemented automated CI/CD
+                        pipelines with Jenkins, integrated SonarQube and Trivy for code quality and security scanning,
+                        and set up Prometheus and Grafana for monitoring and alerting.
+                    </p>
                     <div class="project-tech">
-                        <span class="tech-badge">Express.js</span>
-                        <span class="tech-badge">Prisma</span>
-                        <span class="tech-badge">MySQL</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Star Events Ticketing System -->
-            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
-                <div class="project-image">
-                    <img src="img/project/star-events.jpg" alt="Star Events Ticketing System">
-                    <div class="project-overlay">
-                        <a href="https://github.com/bavindushan/Star_Events_Ticketing_System.git" class="project-link">
-                            <i class='bx bx-link-external'></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Star Events Ticketing System</h3>
-                    <p>ASP.NET Core MVC ticketing platform with secure payments, role-based authentication, and
-                        real-time ticket sales tracking.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">ASP.NET Core</span>
-                        <span class="tech-badge">MySQL</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- E-Shift Transportation Management -->
-            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
-                <div class="project-image">
-                    <img src="img/project/aidoctor.jpg" alt="AI Doctor Agent">
-                    <div class="project-overlay">
-                        <a href="https://github.com/bavindushan/E-Shift-Standalone-System.git" class="project-link">
-                            <i class='bx bx-link-external'></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>E-Shift Transportation Management</h3>
-                    <p>C# desktop system for goods transport management with MySQL, implementing MVC architecture and
-                        real-time vehicle tracking.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">C#</span>
-                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">AWS EC2</span>
+                        <span class="tech-badge">Jenkins</span>
+                        <span class="tech-badge">SonarQube</span>
+                        <span class="tech-badge">Trivy</span>
+                        <span class="tech-badge">Prometheus</span>
+                        <span class="tech-badge">Grafana</span>
                     </div>
                 </div>
             </div>
@@ -349,6 +382,123 @@
                         <span class="tech-badge">Python</span>
                         <span class="tech-badge">OpenCV</span>
                         <span class="tech-badge">Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GWUM Recruitment System -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/gwuimrecruitment.jpg" alt="GWUM Recruitment System">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/GWUIM-RecruitmentManager-Back_end.git"
+                            class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>GWUM Recruitment System</h3>
+                    <p>
+                        Developed and deployed a full-stack recruitment system using Express.js and Vue.js.
+                        Implemented CI/CD pipelines with GitHub Actions and managed deployments using Docker and Nginx
+                        on cloud servers.
+                        Automated builds, server configurations, and monitored system performance while ensuring secure
+                        role-based access.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">Vue.js</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Nginx</span>
+                        <span class="tech-badge">GitHub Actions</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Star Events Ticketing System -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/star-events.jpg" alt="Star Events Ticketing System">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Star_Events_Ticketing_System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Star Events Ticketing System</h3>
+                    <p>ASP.NET Core MVC ticketing platform with secure payments, role-based authentication, and
+                        real-time ticket sales tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">ASP.NET Core</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Azure DevOps</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Greens Customer Mobile Application -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/greens-mobile-app.jpg" alt="Greens Customer App">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Greens_Customer_App.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Greens Customer Mobile App</h3>
+                    <p>REST APIs for plant ordering & monitoring built with Express.js, JWT, Prisma, and Swagger
+                        documentation.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">Prisma</span>
+                        <span class="tech-badge">JWT</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Eats Food Delivery System -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/quick-eats.jpg" alt="Quick Eats Food Delivery System">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Quick_Eats_System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Quick Eats Food Delivery System</h3>
+                    <p>Backend system with Express.js, Prisma, MySQL, JWT for order management, real-time tracking, and
+                        secure rider coordination.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">Prisma</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-Shift Transportation Management -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/eshifttranceport.jpg" alt="AI Doctor Agent">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/E-Shift-Standalone-System.git" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-Shift Transportation Management</h3>
+                    <p>C# desktop system for goods transport management with MySQL, implementing MVC architecture and
+                        real-time vehicle tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">MySQL</span>
                     </div>
                 </div>
             </div>
@@ -527,6 +677,39 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Hotel Management Website -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="project-card">
+                <div class="project-image">
+                    <img src="img/project/hottelmanagementsystem.jpg" alt="Hotel Management System">
+                    <div class="project-overlay">
+                        <a href="https://github.com/bavindushan/Hotel_Management_System_Service_2" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Hotel Management System</h3>
+                    <p>
+                        Built a microservices-based hotel booking system using Express.js and Spring Boot.
+                        Implemented secure transactions, automated reservation cancellations, and billing workflows.
+                        Designed for scalability and efficient hotel operations with a focus on performance and
+                        reliability.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Microservices</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
 
         </div>
     </section>
